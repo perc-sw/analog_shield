@@ -14,4 +14,8 @@ The CAD program used to design this board is [KiCAD](https://www.kicad.org/) whi
 
 - Gerber Files are located in the [fabrication folder](./fabrication/)
 - There is an [Interactive bill of materials html file](./bom/ibom.html) that you can use to assist you in assembling the board. 
-
+- PDF of [Schematic](./pdf/analog_sheild_schematic.pdf)
+- PDF of PCB
+    - [Top view](./pdf/analog_sheild_pcb_top.pdf)
+    - [Bottom view](./pdf/analog_sheild_pcb_bottom.pdf)
+    
