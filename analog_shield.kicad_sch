@@ -4,6 +4,12 @@
 	(generator_version "10.0")
 	(uuid "e63e39d7-6ac0-4ffd-8aa3-1841a4541b55")
 	(paper "B")
+	(title_block
+		(title "Analog Shield")
+		(date "2023-05-04")
+		(rev "C")
+		(company "University of Toronto, Dept. of Physics E.S.S.")
+	)
 	(lib_symbols
 		(symbol "analog_front_end:C_Small"
 			(pin_numbers

@@ -7,6 +7,12 @@
 		(legacy_teardrops no)
 	)
 	(paper "A")
+	(title_block
+		(title "Analog Shield")
+		(date "2023-05-04")
+		(rev "C")
+		(company "University of Toronto, Dept. of Physics E.S.S.")
+	)
 	(layers
 		(0 "F.Cu" signal)
 		(4 "In1.Cu" signal)
@@ -248,7 +254,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode, filled shape"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -272,9 +278,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/72b0723d-cb27-4fa2-bdb2-24ec247accb8")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.29 -1.236)
@@ -419,7 +433,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "K")
+			(pinfunction "K_1")
 			(pintype "passive")
 			(uuid "2026c2cf-b62b-4fac-9995-0a84e7504d65")
 		)
@@ -430,7 +444,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(D3-A)")
-			(pinfunction "A")
+			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "7ce205d6-0aae-4771-ae9c-532316477b3b")
 		)
@@ -490,7 +504,7 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -502,9 +516,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*")
 		(path "/cd4c0303-613b-467d-b28e-82a7149ad441")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
+		(attr dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -619,7 +641,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -643,9 +665,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/bb6f4523-9338-4bb5-8502-b773a37a3ade")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.77 -1.42)
@@ -919,7 +949,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -943,9 +973,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/981d6b54-e57c-46ce-857e-7578b695b709")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.81 1.37)
@@ -1228,7 +1266,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode, filled shape"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -1252,9 +1290,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/e46caaad-1d50-4807-b3b4-44fc140dfb5e")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.29 -1.236)
@@ -1399,7 +1445,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/LED2")
-			(pinfunction "K")
+			(pinfunction "K_1")
 			(pintype "passive")
 			(uuid "db36f6e3-e72a-487f-bda9-88cc84536f62")
 		)
@@ -1410,7 +1456,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(D2-A)")
-			(pinfunction "A")
+			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "e4c6fdbb-fdc7-4ad4-a516-240d84cdc120")
 		)
@@ -1485,7 +1531,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/lr/YAGEO%20MFR_datasheet_2021v1.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1497,7 +1543,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1521,9 +1567,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/03aa98bd-00b2-4fec-9275-7ba321697854")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 8.35 -1.37)
@@ -1803,7 +1857,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -1827,9 +1881,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/f9f783a2-07eb-4be3-9fae-9da817e4fd16")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.27 0.795)
@@ -2079,7 +2141,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/gpn/tlv2472"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2091,7 +2153,7 @@
 				)
 			)
 		)
-		(property "Description" "2.8MHz Rail-to-Rail Input/Output High-Drive Operational Amplifier"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2116,8 +2178,23 @@
 			)
 		)
 		(path "/119f9f75-3058-4ea2-8a7c-17ee40d994df")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "2" "3" "1")
+			)
+			(unit
+				(name "B")
+				(pins "6" "5" "7")
+			)
+			(unit
+				(name "C")
+				(pins "8" "4")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.16 -1.33)
@@ -2288,7 +2365,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(U2A-OUT)")
-			(pinfunction "OUT")
+			(pinfunction "OUT_1")
 			(pintype "output")
 			(uuid "c1c799a0-3c93-493a-9ad7-8a0561bc69ee")
 		)
@@ -2299,7 +2376,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(U2A--)")
-			(pinfunction "-")
+			(pinfunction "-_2")
 			(pintype "input")
 			(uuid "721d1be9-236e-470b-ba69-f1cc6c43faf9")
 		)
@@ -2310,7 +2387,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(U2A-+)")
-			(pinfunction "+")
+			(pinfunction "+_3")
 			(pintype "input")
 			(uuid "5edcefbe-9766-42c8-9529-28d0ec865573")
 		)
@@ -2321,7 +2398,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_4")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "ec5c2062-3a41-4636-8803-069e60a1641a")
@@ -2333,7 +2410,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(U2B-+)")
-			(pinfunction "+")
+			(pinfunction "+_5")
 			(pintype "input")
 			(uuid "81a15393-727e-448b-a777-b18773023d89")
 		)
@@ -2344,7 +2421,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/OPA_OUT")
-			(pinfunction "-")
+			(pinfunction "-_6")
 			(pintype "input")
 			(uuid "a4f86a46-3bc8-4daa-9125-a63f297eb114")
 		)
@@ -2355,7 +2432,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/OPA_OUT")
-			(pinfunction "OUT")
+			(pinfunction "OUT_7")
 			(pintype "output")
 			(uuid "22999e73-da32-43a5-9163-4b3a41614f25")
 		)
@@ -2366,7 +2443,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "+5V")
-			(pinfunction "V+")
+			(pinfunction "V+_8")
 			(pintype "power_in")
 			(thermal_bridge_angle 45)
 			(uuid "6e68f0cd-800e-4167-9553-71fc59da1eeb")
@@ -2492,7 +2569,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2516,9 +2593,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/d725466a-af9e-41f7-9fae-8599b67f26b4")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.77 1.42)
@@ -2791,7 +2876,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2815,9 +2900,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/b0a2acd4-f86c-4593-a513-066edd9d2c86")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.04 0)
@@ -3097,7 +3190,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3121,9 +3214,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/f30f37f4-7d6f-43d4-8643-e06b4ae32622")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.77 -1.42)
@@ -3398,7 +3499,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -3422,9 +3523,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/9782904d-22ff-4b3b-808c-8459d9dcc5ee")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 8.35 -1.37)
@@ -3719,7 +3828,7 @@
 				)
 			)
 		)
-		(property "Description" "Jumper, 3-pole, both open"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -3743,9 +3852,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Jumper* TestPoint*3Pads* TestPoint*Bridge*")
 		(path "/71e38bcf-2f63-44ce-af90-9c332d3081cc")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.33 -1.33)
@@ -3915,7 +4032,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/MCU_ADC_CH1")
-			(pinfunction "A")
+			(pinfunction "A_1")
 			(pintype "passive")
 			(uuid "a201bcbf-7333-407e-89ce-b2e4fe604210")
 		)
@@ -3926,7 +4043,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/TEMP_SIG")
-			(pinfunction "C")
+			(pinfunction "C_2")
 			(pintype "passive")
 			(uuid "57c00d62-f026-4923-8c17-b72134578a78")
 		)
@@ -3937,7 +4054,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/EXT_ADC_CH1")
-			(pinfunction "B")
+			(pinfunction "B_3")
 			(pintype "passive")
 			(uuid "0b8345d1-dd2a-4124-8755-0ed5e0f08ac4")
 		)
@@ -4038,7 +4155,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -4062,9 +4179,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/7015a39f-2bf9-4bff-a536-4fc376be10ae")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.27 0.795)
@@ -4288,7 +4413,7 @@
 				)
 			)
 		)
-		(property "Description" "Potentiometer"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -4312,9 +4437,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Potentiometer*")
 		(path "/5f8aa200-4993-4cfe-bbbf-d5c2481f490a")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.3 -3.47)
@@ -4463,7 +4596,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "VDD")
-			(pinfunction "1")
+			(pinfunction "1_1")
 			(pintype "passive")
 			(uuid "63751680-0b26-4d6c-b2b7-cb68fde369fb")
 		)
@@ -4474,7 +4607,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/POT")
-			(pinfunction "2")
+			(pinfunction "2_2")
 			(pintype "passive")
 			(uuid "ea2481cc-7357-4a29-835a-b8e25adb7f05")
 		)
@@ -4485,7 +4618,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "3")
+			(pinfunction "3_3")
 			(pintype "passive")
 			(uuid "45433574-d6f8-44b3-9f70-176919c33b8a")
 		)
@@ -4570,7 +4703,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode, filled shape"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -4594,9 +4727,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "LED* LED_SMD:* LED_THT:*")
 		(path "/bd975d75-4b55-47d6-a5c5-d332ac15d79d")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.29 -1.236)
@@ -4741,7 +4882,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/LED1")
-			(pinfunction "K")
+			(pinfunction "K_1")
 			(pintype "passive")
 			(uuid "ec31c074-17b2-48e1-ab01-071acad3fa04")
 		)
@@ -4752,7 +4893,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(D1-A)")
-			(pinfunction "A")
+			(pinfunction "A_2")
 			(pintype "passive")
 			(uuid "60dcd1fe-7079-4cb8-b509-04558ccf5097")
 		)
@@ -4848,7 +4989,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -4872,9 +5013,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/2a20dc7e-859d-48c1-8d57-1dcdb2da815a")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.81 1.37)
@@ -5161,7 +5310,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -5185,9 +5334,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/2bc70a47-57b1-4a38-85e5-f64655c5fc32")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 8.35 -1.37)
@@ -5495,7 +5652,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -5519,9 +5676,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/8bfaaf6e-09fe-463b-a897-b02b500324c6")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 9.12 0)
@@ -5806,7 +5971,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -5830,9 +5995,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/6f31c17c-4607-4d34-bdf9-914fc6dd065d")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 9.12 0)
@@ -6117,7 +6290,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -6141,9 +6314,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/13262602-bfdd-4e03-912c-b28430cdda9a")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.81 1.37)
@@ -6440,7 +6621,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -6464,9 +6645,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/f4ea0387-591a-4069-b787-b96e4c2bf81f")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.27 -1.42)
@@ -6742,7 +6931,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x06, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -6766,9 +6955,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_2x??_*")
 		(path "/c883e93b-56e4-4d51-b575-c8f0a37d8a37")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "5" "7" "9" "11" "2" "4" "6" "8" "10" "12")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.33 1.27)
@@ -6958,7 +7155,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "+5V")
-			(pinfunction "Pin_1")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "b1347902-2e45-42bd-a996-f064259bf060")
@@ -6970,7 +7167,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "+5V")
-			(pinfunction "Pin_2")
+			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "84e6ceac-dd8b-4814-9f91-2152e9a380f4")
@@ -6982,7 +7179,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "Pin_3")
+			(pinfunction "Pin_3_3")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "599ee04e-4fb3-4863-b701-f339dbf87c4d")
@@ -6994,7 +7191,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/OPA_OUT")
-			(pinfunction "Pin_4")
+			(pinfunction "Pin_4_4")
 			(pintype "passive")
 			(uuid "ff426af4-d4fa-4bc7-ace4-223dc6f5c2c2")
 		)
@@ -7005,7 +7202,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/IR_VOUT")
-			(pinfunction "Pin_5")
+			(pinfunction "Pin_5_5")
 			(pintype "passive")
 			(uuid "f9d6d23a-dce2-422b-be16-0f9c74b0d988")
 		)
@@ -7016,7 +7213,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/ENC_SW")
-			(pinfunction "Pin_6")
+			(pinfunction "Pin_6_6")
 			(pintype "passive")
 			(uuid "0ae82c89-a697-4bac-86ca-fc4c2bf09ddd")
 		)
@@ -7027,7 +7224,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/POT")
-			(pinfunction "Pin_7")
+			(pinfunction "Pin_7_7")
 			(pintype "passive")
 			(uuid "09e22eb4-75da-442b-b09d-6331098297e9")
 		)
@@ -7038,7 +7235,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/ENC_A")
-			(pinfunction "Pin_8")
+			(pinfunction "Pin_8_8")
 			(pintype "passive")
 			(uuid "aee0135b-8c74-4aaa-a96d-21e3ce1d61d4")
 		)
@@ -7049,7 +7246,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/SENSOR_IN")
-			(pinfunction "Pin_9")
+			(pinfunction "Pin_9_9")
 			(pintype "passive")
 			(uuid "173f35f7-3796-4860-9fae-b6a66f83cf80")
 		)
@@ -7060,7 +7257,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/ENC_B")
-			(pinfunction "Pin_10")
+			(pinfunction "Pin_10_10")
 			(pintype "passive")
 			(uuid "39d7669c-0fea-4994-9d1c-c5a32e154521")
 		)
@@ -7071,7 +7268,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/LED1")
-			(pinfunction "Pin_11")
+			(pinfunction "Pin_11_11")
 			(pintype "passive")
 			(uuid "dcba5197-3fe9-4b2c-b661-44c075688988")
 		)
@@ -7082,7 +7279,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/LED2")
-			(pinfunction "Pin_12")
+			(pinfunction "Pin_12_12")
 			(pintype "passive")
 			(uuid "6a0d28d7-955b-45f5-8810-8151b699e89c")
 		)
@@ -7195,7 +7392,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -7219,9 +7416,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/20cc98d3-cca6-4382-b699-69f0efcb7cc8")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.81 1.37)
@@ -7521,7 +7726,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -7545,9 +7750,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/365da57f-e2a8-4b36-9dbb-2b06a0d6e0e2")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 8.35 -1.37)
@@ -7845,7 +8058,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -7869,9 +8082,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/67ec4ecd-d0ca-460a-9c28-a2f5745926a0")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.27 0.795)
@@ -8144,7 +8365,7 @@
 				)
 			)
 		)
-		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -8168,9 +8389,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "RotaryEncoder*Switch*")
 		(path "/719b6087-3e6b-45bc-92c3-4c05b8377eac")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "A" "C" "B" "S1" "S2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.3 -1.6)
@@ -8462,7 +8691,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(ENC1-PadA)")
-			(pinfunction "A")
+			(pinfunction "A_A")
 			(pintype "passive")
 			(uuid "9d0a5abd-40bc-4885-b217-96052c4c153c")
 		)
@@ -8473,7 +8702,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(ENC1-PadB)")
-			(pinfunction "B")
+			(pinfunction "B_B")
 			(pintype "passive")
 			(uuid "d8e72ba6-4f3e-4aa1-82ef-56e32c3bfa0c")
 		)
@@ -8484,7 +8713,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "C")
+			(pinfunction "C_C")
 			(pintype "passive")
 			(uuid "1e1e59e6-047e-4f4b-9de9-484befb33325")
 		)
@@ -8511,7 +8740,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(ENC1-PadS1)")
-			(pinfunction "S1")
+			(pinfunction "S1_S1")
 			(pintype "passive")
 			(uuid "72fad346-a235-4d41-bebd-99ff84b4d0cc")
 		)
@@ -8522,7 +8751,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "S2")
+			(pinfunction "S2_S2")
 			(pintype "passive")
 			(uuid "e4bf0dba-c0ae-4510-ab52-5f49cc86f479")
 		)
@@ -8613,7 +8842,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -8637,9 +8866,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "C_*")
 		(path "/3a564e04-d735-4779-9c74-5f42e66b6c08")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.27 -1.42)
@@ -8906,7 +9143,7 @@
 				)
 			)
 		)
-		(property "Description" "Jumper, 3-pole, pins 1+2 closed/bridged"
+		(property "Description" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -8930,9 +9167,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Jumper* TestPoint*3Pads* TestPoint*Bridge*")
 		(path "/112a6b6d-2068-484b-8dde-2904ab8603a3")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.33 1.27)
@@ -9102,7 +9347,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/TEMP_MON")
-			(pinfunction "A")
+			(pinfunction "A_1")
 			(pintype "passive")
 			(uuid "12be1cbc-ecf1-4078-9b67-219bc61150eb")
 		)
@@ -9113,7 +9358,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/SENSOR_IN")
-			(pinfunction "C")
+			(pinfunction "C_2")
 			(pintype "passive")
 			(uuid "36da77aa-944d-411f-8a1e-21d6c3dc6938")
 		)
@@ -9124,7 +9369,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(J1-Pin_2)")
-			(pinfunction "B")
+			(pinfunction "B_3")
 			(pintype "passive")
 			(uuid "22c59815-9d35-4ac7-962e-eeb16c0fa3b3")
 		)
@@ -9213,7 +9458,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -9237,9 +9482,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/92842a85-dd94-47e4-9d71-5110fea2cb7a")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.04 0)
@@ -9533,7 +9786,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -9557,9 +9810,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/9efb7e67-a829-4e4c-b680-facd9302797f")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.81 1.37)
@@ -9853,7 +10114,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -9877,9 +10138,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/77a29fa5-6999-48ea-ac49-559cd1ade83d")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 1.81 1.37)
@@ -10181,7 +10450,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -10205,9 +10474,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/47e3c079-df17-412b-b86b-e6b10e3a6a1a")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 8.35 -1.37)
@@ -10472,7 +10749,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.yageo.com/upload/media/product/productsearch/datasheet/lr/YAGEO%20MFR_datasheet_2021v1.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -10484,7 +10761,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -10508,9 +10785,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/baf91d7d-2c2f-4e80-9138-834a6e638abd")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 8.35 -1.37)
@@ -10781,7 +11066,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -10805,9 +11090,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/62edb3ca-e66f-4ae3-8fbc-e8328cb96eee")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 6.46 -3.03)
@@ -11148,7 +11441,7 @@
 			(remove_unused_layers no)
 			(roundrect_rratio 0.1436781609)
 			(net "+5V")
-			(pinfunction "Pin_1")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "4600b549-e24e-4889-b3b7-e9ef9d4c6984")
@@ -11160,7 +11453,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "Net-(J1-Pin_2)")
-			(pinfunction "Pin_2")
+			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "5c74aafb-1a1d-42fd-8951-32eaa4bc449f")
 		)
@@ -11171,7 +11464,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "Pin_3")
+			(pinfunction "Pin_3_3")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "3dde0f44-0665-4453-b19d-e21159b30787")
@@ -11232,7 +11525,7 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11244,9 +11537,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*")
 		(path "/fcfb30a5-9b97-4fc7-9d73-91eef0296a30")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
+		(attr dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -11322,7 +11623,7 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -11334,9 +11635,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*")
 		(path "/4aeefbdd-53e7-4bef-9515-bac251c037ce")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
+		(attr dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -11459,7 +11768,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -11483,9 +11792,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/3429c177-6868-49d3-826e-e8e99a71292d")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 9.12 0)
@@ -11765,7 +12082,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -11789,9 +12106,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/27fe3ab7-c259-4398-b792-98b198d63ef0")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 7.61 -6.81)
@@ -12322,7 +12647,7 @@
 			(remove_unused_layers no)
 			(roundrect_rratio 0.1470588235)
 			(net "/IR_VOUT")
-			(pinfunction "Pin_1")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "a10cdecd-53db-4a94-874a-3261fddc42c8")
 		)
@@ -12333,7 +12658,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "Pin_2")
+			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "488ff63f-1512-4eec-9188-185416b28e19")
@@ -12345,7 +12670,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "VDD")
-			(pinfunction "Pin_3")
+			(pinfunction "Pin_3_3")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "3fd36cfa-1902-4c95-8d23-c93e84d4b40e")
@@ -12406,7 +12731,7 @@
 				)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12418,9 +12743,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "MountingHole*")
 		(path "/418ec146-ea56-4623-aae8-8d928037d4b0")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins)
+			)
+		)
+		(attr dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -12531,7 +12864,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor"
+		(property "Description" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -12555,9 +12888,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "R_*")
 		(path "/440f7ee2-6e9b-4de9-ac6c-43a0c81a26c8")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 9.12 0)
@@ -12818,7 +13159,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.ti.com/lit/gpn/lmt84"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12830,7 +13171,7 @@
 				)
 			)
 		)
-		(property "Description" "Precision centigrade temperature sensor, TO-92"
+		(property "Description" ""
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -12854,9 +13195,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "TO?92*")
 		(path "/654c4902-93e9-45a6-93f2-d703898f1a1f")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "3" "2")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.53 1.85)
@@ -12980,7 +13329,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "+5V")
-			(pinfunction "+VS")
+			(pinfunction "+VS_1")
 			(pintype "power_in")
 			(uuid "382ca670-6ae8-4de6-90f9-f241d1337171")
 		)
@@ -12991,7 +13340,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/TEMP_MON")
-			(pinfunction "Vout")
+			(pinfunction "Vout_2")
 			(pintype "output")
 			(uuid "0e8f7fc0-2ef2-4b90-9c15-8a3a601ee459")
 		)
@@ -13002,7 +13351,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "GND")
+			(pinfunction "GND_3")
 			(pintype "power_in")
 			(thermal_bridge_angle 90)
 			(uuid "b0906e10-2fbc-4309-a8b4-6fc4cd1a5490")
@@ -13121,7 +13470,7 @@
 				)
 			)
 		)
-		(property "Description" "Jumper, 3-pole, both open"
+		(property "Description" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -13133,9 +13482,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Jumper* TestPoint*3Pads* TestPoint*Bridge*")
 		(path "/606f0734-84b4-4d3f-9d9d-5e82e8a97dc0")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
+			)
+		)
+		(attr dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 2.75 1)
@@ -13234,7 +13591,7 @@
 			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask")
 			(net "/+5V_IN")
-			(pinfunction "A")
+			(pinfunction "A_1")
 			(pintype "passive")
 			(zone_connect 2)
 			(thermal_bridge_angle 45)
@@ -13258,7 +13615,7 @@
 			(size 0.3 0.3)
 			(layers "B.Cu")
 			(net "VDD")
-			(pinfunction "C")
+			(pinfunction "C_2")
 			(pintype "passive")
 			(zone_connect 2)
 			(thermal_bridge_angle 45)
@@ -13281,8 +13638,8 @@
 			(at 2 0)
 			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask")
-			(net "+3V3")
-			(pinfunction "B")
+			(net "+3.3V")
+			(pinfunction "B_3")
 			(pintype "passive")
 			(zone_connect 2)
 			(thermal_bridge_angle 45)
@@ -13390,7 +13747,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -13402,9 +13759,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/55b7bc3c-1932-496e-a0e6-192ccead4bf9")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6" "7" "8" "9" "10")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.33 -24.19)
@@ -13575,8 +13940,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J6-Pin_1-Pad1)")
-			(pinfunction "Pin_1")
-			(pintype "passive")
+			(pinfunction "Pin_1_1")
+			(pintype "passive+no_connect")
 			(uuid "1876c30c-72b2-4a8d-9f32-bf8b213530b4")
 		)
 		(pad "2" thru_hole oval
@@ -13586,8 +13951,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J6-Pin_2-Pad2)")
-			(pinfunction "Pin_2")
-			(pintype "passive")
+			(pinfunction "Pin_2_2")
+			(pintype "passive+no_connect")
 			(uuid "099473f1-6598-46ff-a50f-4c520832170d")
 		)
 		(pad "3" thru_hole oval
@@ -13597,8 +13962,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J6-Pin_3-Pad3)")
-			(pinfunction "Pin_3")
-			(pintype "passive")
+			(pinfunction "Pin_3_3")
+			(pintype "passive+no_connect")
 			(uuid "ca9b74ce-0dee-401c-9544-f599f4cf538d")
 		)
 		(pad "4" thru_hole oval
@@ -13608,8 +13973,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J6-Pin_4-Pad4)")
-			(pinfunction "Pin_4")
-			(pintype "passive")
+			(pinfunction "Pin_4_4")
+			(pintype "passive+no_connect")
 			(uuid "199124ca-dd64-45cf-a063-97cc545cbea7")
 		)
 		(pad "5" thru_hole oval
@@ -13619,8 +13984,8 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J6-Pin_5-Pad5)")
-			(pinfunction "Pin_5")
-			(pintype "passive")
+			(pinfunction "Pin_5_5")
+			(pintype "passive+no_connect")
 			(uuid "c346b00c-b5e0-4939-beb4-7f48172ef334")
 		)
 		(pad "6" thru_hole oval
@@ -13630,7 +13995,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J6-Pin_6-Pad6)")
-			(pinfunction "Pin_6")
+			(pinfunction "Pin_6_6")
 			(pintype "passive+no_connect")
 			(uuid "57f248a7-365e-4c42-b80d-5a7d1f9dfaf3")
 		)
@@ -13641,7 +14006,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "Pin_7")
+			(pinfunction "Pin_7_7")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "1bd80cf9-f42a-4aee-a408-9dbf4e81e625")
@@ -13653,7 +14018,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J6-Pin_8-Pad8)")
-			(pinfunction "Pin_8")
+			(pinfunction "Pin_8_8")
 			(pintype "passive+no_connect")
 			(uuid "80095e91-6317-4cfb-9aea-884c9a1accc5")
 		)
@@ -13664,7 +14029,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J6-Pin_9-Pad9)")
-			(pinfunction "Pin_9")
+			(pinfunction "Pin_9_9")
 			(pintype "passive+no_connect")
 			(uuid "15699041-ed40-45ee-87d8-f5e206a88536")
 		)
@@ -13675,7 +14040,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J6-Pin_10-Pad10)")
-			(pinfunction "Pin_10")
+			(pinfunction "Pin_10_10")
 			(pintype "passive+no_connect")
 			(uuid "968a6172-7a4e-40ab-a78a-e4d03671e136")
 		)
@@ -14226,7 +14591,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://cdn.harwin.com/pdfs/C001XX_M20_Series_Connectors.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -14238,7 +14603,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -14263,9 +14628,17 @@
 				(justify mirror)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/01e2c095-74bb-4f9e-a81e-722655152cdc")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6" "7" "8")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.33 1.33)
@@ -14436,7 +14809,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J3-Pin_1-Pad1)")
-			(pinfunction "Pin_1")
+			(pinfunction "Pin_1_1")
 			(pintype "passive+no_connect")
 			(uuid "33d3bb03-e7de-43e7-9b78-b6bebee3ec95")
 		)
@@ -14447,7 +14820,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J3-Pin_2-Pad2)")
-			(pinfunction "Pin_2")
+			(pinfunction "Pin_2_2")
 			(pintype "passive+no_connect")
 			(uuid "d77ee948-16e9-475a-86b0-90edc83948cf")
 		)
@@ -14458,7 +14831,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J3-Pin_3-Pad3)")
-			(pinfunction "Pin_3")
+			(pinfunction "Pin_3_3")
 			(pintype "passive+no_connect")
 			(uuid "7f257b01-3707-4234-a8a7-c978bc248bdc")
 		)
@@ -14468,8 +14841,8 @@
 			(drill 1)
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
-			(net "+3V3")
-			(pinfunction "Pin_4")
+			(net "+3.3V")
+			(pinfunction "Pin_4_4")
 			(pintype "passive")
 			(uuid "bd864223-4618-41c8-b016-2349a6aa6e7a")
 		)
@@ -14480,7 +14853,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/+5V_IN")
-			(pinfunction "Pin_5")
+			(pinfunction "Pin_5_5")
 			(pintype "passive")
 			(uuid "0f45c489-1f27-4e6c-94ec-665602e92e75")
 		)
@@ -14491,7 +14864,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "Pin_6")
+			(pinfunction "Pin_6_6")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "04be4ed0-382b-4bb5-a7ce-f68503e9d342")
@@ -14503,7 +14876,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "GND")
-			(pinfunction "Pin_7")
+			(pinfunction "Pin_7_7")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "4ed9a42f-68c7-4e31-b77c-65e165f8eb62")
@@ -14515,7 +14888,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "VDC")
-			(pinfunction "Pin_8")
+			(pinfunction "Pin_8_8")
 			(pintype "passive")
 			(uuid "efb83c0e-1f3e-4bd5-9b78-99894f4b6c0c")
 		)
@@ -14591,7 +14964,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://cdn.harwin.com/pdfs/C001XX_M20_Series_Connectors.pdf"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -14603,7 +14976,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -14628,9 +15001,17 @@
 				(justify mirror)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/9ff3546c-fef5-4000-952e-477cc0de43ea")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6" "7" "8")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.33 -19.11)
@@ -14801,7 +15182,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J7-Pin_1-Pad1)")
-			(pinfunction "Pin_1")
+			(pinfunction "Pin_1_1")
 			(pintype "passive+no_connect")
 			(uuid "b4140fa0-0615-425c-916b-faae760f3997")
 		)
@@ -14812,7 +15193,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J7-Pin_2-Pad2)")
-			(pinfunction "Pin_2")
+			(pinfunction "Pin_2_2")
 			(pintype "passive+no_connect")
 			(uuid "a87071ac-2cd6-4b07-9235-3c4b5bc31fe5")
 		)
@@ -14823,7 +15204,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/ENC_SW")
-			(pinfunction "Pin_3")
+			(pinfunction "Pin_3_3")
 			(pintype "passive")
 			(uuid "ee9d6224-5e30-47d6-b0c2-9df6218d6d54")
 		)
@@ -14834,7 +15215,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/ENC_A")
-			(pinfunction "Pin_4")
+			(pinfunction "Pin_4_4")
 			(pintype "passive")
 			(uuid "561f0f92-2f38-4311-bbdf-743431f68ade")
 		)
@@ -14845,7 +15226,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/ENC_B")
-			(pinfunction "Pin_5")
+			(pinfunction "Pin_5_5")
 			(pintype "passive")
 			(uuid "cb438843-ed0d-411e-bfc5-3c174b13b68c")
 		)
@@ -14856,7 +15237,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/LED2")
-			(pinfunction "Pin_6")
+			(pinfunction "Pin_6_6")
 			(pintype "passive")
 			(uuid "16bcb3ad-bced-43b9-b1e9-04f1ddd49272")
 		)
@@ -14867,7 +15248,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/LED1")
-			(pinfunction "Pin_7")
+			(pinfunction "Pin_7_7")
 			(pintype "passive")
 			(uuid "89093827-bb23-4e39-8ebb-d4aae8eed604")
 		)
@@ -14878,7 +15259,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J7-Pin_8-Pad8)")
-			(pinfunction "Pin_8")
+			(pinfunction "Pin_8_8")
 			(pintype "passive+no_connect")
 			(uuid "f0171ac8-a0fb-47d8-8b5b-b5e6f52da220")
 		)
@@ -14963,7 +15344,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" ""
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -14975,9 +15356,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Connector*:*_1x??_*")
 		(path "/8cd1e8a4-b24a-4c73-9154-f09a02404075")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr through_hole)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3" "4" "5" "6")
+			)
+		)
+		(attr through_hole dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.33 1.33)
@@ -15148,7 +15537,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/MCU_ADC_CH1")
-			(pinfunction "Pin_1")
+			(pinfunction "Pin_1_1")
 			(pintype "passive")
 			(uuid "df83f395-2d18-47e2-a370-952ca41c2b3a")
 		)
@@ -15159,7 +15548,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/SENSOR_IN")
-			(pinfunction "Pin_2")
+			(pinfunction "Pin_2_2")
 			(pintype "passive")
 			(uuid "653a86ba-a1ae-4175-9d4c-c788087956d0")
 		)
@@ -15170,7 +15559,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "unconnected-(J4-Pin_3-Pad3)")
-			(pinfunction "Pin_3")
+			(pinfunction "Pin_3_3")
 			(pintype "passive+no_connect")
 			(uuid "3ed2c840-383d-4cbd-bc3b-c4ea4c97b333")
 		)
@@ -15181,7 +15570,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/EXT_ADC_CH1")
-			(pinfunction "Pin_4")
+			(pinfunction "Pin_4_4")
 			(pintype "passive")
 			(uuid "6a0919c2-460c-4229-b872-14e318e1ba8b")
 		)
@@ -15192,7 +15581,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/IR_VOUT")
-			(pinfunction "Pin_5")
+			(pinfunction "Pin_5_5")
 			(pintype "passive")
 			(uuid "d1c19c11-0a13-4237-b6b4-fb2ef1db7c6d")
 		)
@@ -15203,7 +15592,7 @@
 			(layers "*.Cu" "*.Mask")
 			(remove_unused_layers no)
 			(net "/POT")
-			(pinfunction "Pin_6")
+			(pinfunction "Pin_6_6")
 			(pintype "passive")
 			(uuid "29cbb0bc-f66b-4d11-80e7-5bb270e42496")
 		)
@@ -15303,7 +15692,7 @@
 				)
 			)
 		)
-		(property "Description" "Jumper, 3-pole, both open"
+		(property "Description" ""
 			(at 0 0 180)
 			(layer "F.Fab")
 			(hide yes)
@@ -15315,9 +15704,17 @@
 				)
 			)
 		)
+		(property ki_fp_filters "Jumper* TestPoint*3Pads* TestPoint*Bridge*")
 		(path "/efae68b0-8938-4748-880a-8393714371c4")
+		(sheetname "/")
 		(sheetfile "analog_shield.kicad_sch")
-		(attr exclude_from_pos_files)
+		(units
+			(unit
+				(name "A")
+				(pins "1" "2" "3")
+			)
+		)
+		(attr dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 2.75 1)
@@ -15416,7 +15813,7 @@
 			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask")
 			(net "VDC")
-			(pinfunction "A")
+			(pinfunction "A_1")
 			(pintype "passive")
 			(zone_connect 2)
 			(thermal_bridge_angle 45)
@@ -15440,7 +15837,7 @@
 			(size 0.3 0.3)
 			(layers "B.Cu")
 			(net "+5V")
-			(pinfunction "C")
+			(pinfunction "C_2")
 			(pintype "passive")
 			(zone_connect 2)
 			(thermal_bridge_angle 45)
@@ -15464,7 +15861,7 @@
 			(size 0.3 0.3)
 			(layers "B.Cu" "B.Mask")
 			(net "/+5V_IN")
-			(pinfunction "B")
+			(pinfunction "B_3")
 			(pintype "passive")
 			(zone_connect 2)
 			(thermal_bridge_angle 45)
@@ -23324,30 +23721,6 @@
 		(uuid "f87ead69-89dc-4b69-b5d6-c9c91bddc105")
 	)
 	(segment
-		(start 87.56 124.81)
-		(end 87.56 126.46)
-		(width 1)
-		(layer "B.Cu")
-		(net "+3V3")
-		(uuid "317d52f3-41d4-4cbc-a059-b4c0b1a67f9c")
-	)
-	(segment
-		(start 87 122.25)
-		(end 87 124.25)
-		(width 1)
-		(layer "B.Cu")
-		(net "+3V3")
-		(uuid "ae3baccc-0856-480c-872f-07a30229215b")
-	)
-	(segment
-		(start 87 124.25)
-		(end 87.56 124.81)
-		(width 1)
-		(layer "B.Cu")
-		(net "+3V3")
-		(uuid "b0b9ef35-4416-4bbe-ab22-7ebf74293394")
-	)
-	(segment
 		(start 97.72 126.46)
 		(end 97.72 122.28)
 		(width 1)
@@ -23362,6 +23735,30 @@
 		(layer "B.Cu")
 		(net "VDC")
 		(uuid "d641c84b-9ba4-47c9-986b-882a31f2f342")
+	)
+	(segment
+		(start 87.56 124.81)
+		(end 87.56 126.46)
+		(width 1)
+		(layer "B.Cu")
+		(net "+3.3V")
+		(uuid "317d52f3-41d4-4cbc-a059-b4c0b1a67f9c")
+	)
+	(segment
+		(start 87 122.25)
+		(end 87 124.25)
+		(width 1)
+		(layer "B.Cu")
+		(net "+3.3V")
+		(uuid "ae3baccc-0856-480c-872f-07a30229215b")
+	)
+	(segment
+		(start 87 124.25)
+		(end 87.56 124.81)
+		(width 1)
+		(layer "B.Cu")
+		(net "+3.3V")
+		(uuid "b0b9ef35-4416-4bbe-ab22-7ebf74293394")
 	)
 	(zone
 		(net "GND")
