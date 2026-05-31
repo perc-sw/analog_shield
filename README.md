@@ -1,6 +1,6 @@
 # Analog Shield
 
-![image](images/AFE_Shield_3D_side02.png)
+![image](docs/images/AFE_Shield_3D_side02.png)
 
 ## Description
 
@@ -16,6 +16,8 @@ The CAD program used to design this board is [KiCAD](https://www.kicad.org/) whi
 - There is an [Interactive bill of materials html file](https://perc-sw.github.io/analog_shield/bom/ibom.html) that you can use to assist you in assembling the board. 
 - PDF of [Schematic](./docs/pdf/analog_sheild_schematic.pdf)
 - PDF of PCB
-    - [Top view](./docs/pdf/analog_sheild_pcb_top.pdf)
-    - [Bottom view](./docs/pdf/analog_sheild_pcb_bottom.pdf)
+    - [Top layer Cu](./docs/pdf/board/analog_sheild_pcb_top.pdf)
+    - [Inner 1 Cu](./docs/pdf/board/analog_sheild_pcb_inner_1.pdf)
+    - [Inner 2 Cu](./docs/pdf/board/analog_sheild_pcb_inner_2.pdf)
+    - [Bottom layer Cu](./docs/pdf/board/analog_sheild_pcb_bottom.pdf)
     
